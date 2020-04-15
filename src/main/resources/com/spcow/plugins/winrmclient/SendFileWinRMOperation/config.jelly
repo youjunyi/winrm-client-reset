@@ -1,0 +1,12 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:f="/lib/form">
+    <f:entry title="Source" field="source">
+        <f:textbox field="source" />
+    </f:entry>
+    <f:entry title="Destination" field="destination">
+        <f:textbox field="destination" />
+    </f:entry>
+    <f:entry title="Configuration Name" field="configurationName">
+        <f:textbox field="configurationName" />
+    </f:entry>
+</j:jelly>

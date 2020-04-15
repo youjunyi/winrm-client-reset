@@ -1,0 +1,6 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:f="/lib/form">
+    <f:entry title="Command" field="command">
+        <f:textarea field="command" />
+    </f:entry>
+</j:jelly>
