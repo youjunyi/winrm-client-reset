@@ -1,6 +1,8 @@
 WinRM Client Plugin
 ==============
 This plugin's main goal is to provide WinRM Operations as Build Step.
+1、新添加了块模式可以启动连接断开后不关闭的进程
+2、完善了文件发送支持文件夹发送
 
 At present following Operations implemented:
 ---
@@ -8,6 +10,7 @@ At present following Operations implemented:
   
   2) Invoke-Command Operation
   
+  3) Invoke-Command-ScriptBlock(新增的块模式)
 # Job DSL example
     freeStyleJob('WinRMClientJob') {
         steps {
@@ -21,3 +24,4 @@ At present following Operations implemented:
     }
 # Jenkins Pipeline example
     winRMClient credentialsId: '549bdb9b-0d36-4c21-948a-ca0a9ef6575f', hostName: '192.168.1.7', winRMOperations: [invokeCommand('dir'), sendFile(configurationName: 'DataNoLimits', destination: 'C:\\test', source: 'C:\\test.txt')]
+
